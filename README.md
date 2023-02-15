@@ -16,4 +16,4 @@ Its a React SPA for my pet project. Deployed on Firebase.
 # Installation
 
 - `npm install`
-- `npm start`
+- `npm start `
