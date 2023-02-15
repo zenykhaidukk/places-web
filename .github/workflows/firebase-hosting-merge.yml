@@ -6,9 +6,15 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - master
+env:
+  REACT_APP_GOOGLE_API_KEY: '${{ env.REACT_APP_GOOGLE_API_KEY }}'
+  REACT_APP_API_URL: '${{ env.REACT_APP_API_URL }}'
+  REACT_APP_ASSET_URL: '${{ env.REACT_APP_ASSET_URL }}'
+  
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    environment: prod
     steps:
       - uses: actions/checkout@v2
       - run: npm ci && npm run build
