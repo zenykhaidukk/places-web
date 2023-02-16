@@ -15,5 +15,7 @@ Its a React SPA for my pet project. Deployed on Firebase. You can play around wi
 
 # Installation
 
+You'll need env vars to start an web server. Example can be found in `.env.example`. After settting up env vars, run:
+
 - `npm install`
 - `npm start `
